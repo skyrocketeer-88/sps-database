@@ -4,18 +4,19 @@
   <meta charset="utf-8">
   <title>SPS Database</title>
   
-  <!-- iOS Safari reads this directly with zero iframe blocking -->
-  <link rel="apple-touch-icon" sizes="180x180" href="https://lh3.googleusercontent.com/d/17AyPGVTcw5ol5uLBGyeUv_tbMhqinf3c=s360">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/17AyPGVTcw5ol5uLBGyeUv_tbMhqinf3c=s360">
+  <!-- iOS Touch Icons -->
+  <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/17AyPGVTcw5ol5uLBGyeUv_tbMhqinf3c=s360">
+  <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/17AyPGVTcw5ol5uLBGyeUv_tbMhqinf3c=s360">
   
-  <!-- Instantly forwards user to your Apps Script Web App -->
   <script>
-    window.location.replace("https://script.google.com/a/macros/dlsu.edu.ph/s/AKfycbwEBuVxXtHB0hBLWM6upqKLz58J7qkDAKq2DaBmqNLQoCT7h81Cc-N-1iUjxWHT12W18A/exec");
+    // Gives Safari 2.5 seconds to parse & cache the icon before redirecting
+    setTimeout(function() {
+      window.location.href = "YOUR_APPS_SCRIPT_EXEC_URL_HERE";
+    }, 2500);
   </script>
 </head>
-<body>
-  <p style="font-family: sans-serif; text-align: center; margin-top: 20%; color: #6b6456;">
-    Loading SPS Database...
-  </p>
+<body style="font-family:-apple-system,BlinkMacSystemFont,sans-serif; text-align:center; padding-top:30vh; background:#F5F2EC;">
+  <h2>Opening SPS Database...</h2>
+  <p>If you are not redirected, <a href="YOUR_APPS_SCRIPT_EXEC_URL_HERE">click here</a>.</p>
 </body>
 </html>
