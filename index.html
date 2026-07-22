@@ -1,28 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SPS Database</title>
   
-  <!-- iOS Home Screen App Requirements -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="SPS Database">
+  <!-- Apple Touch Icon Metadata -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="apple-touch-icon.png">
   
-  <!-- Use the FULL absolute URL to your GitHub image -->
-  <link rel="apple-touch-icon" href="https://skyrocketeer-88.github.io/sps-database/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://skyrocketeer-88.github.io/sps-database/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="https://skyrocketeer-88.github.io/sps-database/apple-touch-icon.png">
-  
-  <script>
-    // Delay the redirect so Safari can parse the icon for the bookmark preview
-    setTimeout(function() {
-      window.location.href = "https://script.google.com/a/macros/dlsu.edu.ph/s/AKfycbwEBuVxXtHB0hBLWM6upqKLz58J7qkDAKq2DaBmqNLQoCT7h81Cc-N-1iUjxWHT12W18A/exec";
-    }, 3000);
-  </script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #F5F2EC;
+      color: #1C1A17;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .card {
+      background: #FDFBF7;
+      padding: 32px 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      max-width: 320px;
+      width: 100%;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 20px;
+      margin: 0 0 8px 0;
+    }
+    p {
+      font-size: 14px;
+      color: #6B6456;
+      margin: 0 0 24px 0;
+    }
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 14px 0;
+      background-color: #1A2744;
+      color: #F5F2EC;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(26,39,68,0.2);
+    }
+  </style>
 </head>
-<body style="font-family:-apple-system,BlinkMacSystemFont,sans-serif; text-align:center; padding-top:30vh; background:#F5F2EC;">
-  <h2>Opening SPS Database...</h2>
-  <p>If you are not redirected, <a href="https://script.google.com/a/macros/dlsu.edu.ph/s/AKfycbwEBuVxXtHB0hBLWM6upqKLz58J7qkDAKq2DaBmqNLQoCT7h81Cc-N-1iUjxWHT12W18A/exec">click here</a>.</p>
+<body>
+
+  <div class="card">
+    <img src="apple-touch-icon.png" alt="SPS Logo">
+    <h1>SPS Database</h1>
+    <p>Tap below to launch the web application.</p>
+    <!-- REPLACE THE HREF BELOW WITH YOUR GOOGLE APPS SCRIPT EXEC URL -->
+    <a class="btn" href="
+https://script.google.com/a/macros/dlsu.edu.ph/s/AKfycbwEBuVxXtHB0hBLWM6upqKLz58J7qkDAKq2DaBmqNLQoCT7h81Cc-N-1iUjxWHT12W18A/exec">Open Database</a>
+  </div>
+
 </body>
 </html>
